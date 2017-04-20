@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DateFormatter.cs" />
+    <Compile Include="DateTimeFormatter.cs" />
     <Compile Include="DateType.cs" />
     <Compile Include="DisplayRavenClock.cs" />
     <Compile Include="HHMMSSFormatter.cs" />

@@ -56,6 +56,7 @@
     <Compile Include="RavenClockServiceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DisplayTest.cs" />
+    <Compile Include="DateTimeFormatterTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -13,9 +13,11 @@ namespace RAVENClock
                 formatDate = new HHMMSSFormatter();
                 time = formatDate.format(inputDateString);
             } else if (preference.getDateType().Equals(DateType.Timestamp.ToString())) {
+                
 
             } else if (preference.getDateType().Equals(DateType.DateTime.ToString())) {
-
+                formatDate = new DateTimeFormatter();
+                time = formatDate.format(inputDateString);
             } else {
                 Console.Write("INVALID date format. Use any among these formats : HHMMSS, Timestamp, DateTime");
                 return "";
