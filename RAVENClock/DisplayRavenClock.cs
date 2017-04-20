@@ -12,7 +12,7 @@ namespace RAVENClock
             displayedTime = displayedTime.Replace("O", preference.getOffColor());
             
             Console.WriteLine();
-            Console.Write("RAVENClock Clock Display : ");
+            Console.Write("RAVEN Clock Display : ");
             Console.WriteLine();
             Console.Write(displayedTime);
 
