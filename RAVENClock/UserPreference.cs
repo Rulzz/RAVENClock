@@ -5,12 +5,11 @@ using System.Text;
 
 namespace RAVENClock
 {
-    class UserPreference
+    public class UserPreference
     {
         private String hourColor;
         private String minColor;
         private String offColor;
-        private String inputDateString;
         private String dateType;
 
         public String getHourColor()
@@ -39,16 +38,7 @@ namespace RAVENClock
         {
             this.offColor = offColor;
         }
-
-        public String getInputDateString()
-        {
-            return inputDateString;
-        }
-        public void setInputDateString(String inputDateString)
-        {
-            this.inputDateString = inputDateString;
-        }
-
+        
         public String getDateType()
         {
             return dateType;
