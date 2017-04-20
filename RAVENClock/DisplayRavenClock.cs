@@ -4,7 +4,7 @@ namespace RAVENClock
 {
     public class DisplayRavenClock
     {
-        public void display(String displayedTime, UserPreference preference)
+        public String display(String displayedTime, UserPreference preference)
         {
             displayedTime = displayedTime.Replace("S", preference.getSecColor());
             displayedTime = displayedTime.Replace("H", preference.getHourColor());
@@ -15,6 +15,8 @@ namespace RAVENClock
             Console.Write("RAVENClock Clock Display : ");
             Console.WriteLine();
             Console.Write(displayedTime);
+
+            return displayedTime;
         }
     }
 }

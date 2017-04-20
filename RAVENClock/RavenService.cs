@@ -5,7 +5,7 @@ namespace RAVENClock
     public class RavenService
     {
         DisplayRavenClock displayRaven = new DisplayRavenClock();
-        public void generateRavenClock(String inputDateString, UserPreference preference)
+        public String generateRavenClock(String inputDateString, UserPreference preference)
         {
             DateFormatter formatDate;
             String time = "";
@@ -18,17 +18,17 @@ namespace RAVENClock
 
             } else {
                 Console.Write("INVALID date format. Use any among these formats : HHMMSS, Timestamp, DateTime");
-                return;
+                return "";
             }
 
             String displayedTime = getClockString(time);
 
-            displayRaven.display(displayedTime, preference);
+            return displayRaven.display(displayedTime, preference);
 
         }
 
         //expected time String in format - HH:MM:SS
-        private string getClockString(string time)
+        public string getClockString(string time)
         {
             String displayedTime = "";
 
