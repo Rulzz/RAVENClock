@@ -4,6 +4,7 @@ namespace RAVENClock
 {
     public class RavenService
     {
+        DisplayRavenClock displayRaven = new DisplayRavenClock();
         public void generateRavenClock(String inputDateString, UserPreference preference)
         {
             DateFormatter formatDate;
@@ -22,7 +23,7 @@ namespace RAVENClock
 
             String displayedTime = getClockString(time);
 
-            Console.Write(displayedTime);
+            displayRaven.display(displayedTime, preference);
 
         }
 
@@ -32,6 +33,13 @@ namespace RAVENClock
             String displayedTime = "";
 
             string[] timeComponents = time.Split(':');
+
+            if(timeComponents.Length<3)
+            {
+                Console.Write("INVALID date format. Use any among these formats : HHMMSS, Timestamp, DateTime");
+                return "";
+            }
+
             int hours = Int32.Parse(timeComponents[0]);
             int minutes = Int32.Parse(timeComponents[1]);
             int seconds = Int32.Parse(timeComponents[2]);

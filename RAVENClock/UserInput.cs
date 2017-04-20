@@ -21,11 +21,15 @@ namespace RAVENClock
             String minColor = Console.ReadLine();
             preference.setMinColor(minColor);
 
+            Console.Write("Which letter should seconds light be displayed? ");
+            String secColor = Console.ReadLine();
+            preference.setSecColor(secColor);
+
             Console.Write("Which letter should off light be displayed? ");
             String offColor = Console.ReadLine();
             preference.setOffColor(offColor);
 
-            Console.Write("Enter Time Format... Ex. HHMMSS, Timestamp, DateTime ");
+            Console.Write("Enter Time Format... Ex. HHMMSS, Timestamp, DateTime - ");
             String DateTyprString = Console.ReadLine();
             preference.setDateType(DateTyprString);
 

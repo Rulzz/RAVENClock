@@ -9,6 +9,7 @@ namespace RAVENClock
     {
         private String hourColor;
         private String minColor;
+        private String secColor;
         private String offColor;
         private String dateType;
 
@@ -28,6 +29,15 @@ namespace RAVENClock
         public void setMinColor(String minColor)
         {
             this.minColor = minColor;
+        }
+
+        public String getSecColor()
+        {
+            return secColor;
+        }
+        public void setSecColor(String secColor)
+        {
+            this.secColor = secColor;
         }
 
         public String getOffColor()
