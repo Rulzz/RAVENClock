@@ -13,8 +13,8 @@ namespace RAVENClock
                 formatDate = new HHMMSSFormatter();
                 time = formatDate.format(inputDateString);
             } else if (preference.getDateType().Equals(DateType.Timestamp.ToString())) {
-                
-
+                formatDate = new TimestampFormatter();
+                time = formatDate.format(inputDateString);
             } else if (preference.getDateType().Equals(DateType.DateTime.ToString())) {
                 formatDate = new DateTimeFormatter();
                 time = formatDate.format(inputDateString);
